@@ -5,7 +5,7 @@ Home: http://pyscaffold.readthedocs.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Template tool for putting up the scaffold of a Python project
 
