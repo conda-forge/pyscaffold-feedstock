@@ -1,4 +1,4 @@
-{% set version = "2.5.5" %}
+{% set version = "2.5.6" %}
 
 package:
     name: pyscaffold
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: PyScaffold-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/P/PyScaffold/PyScaffold-{{ version }}.tar.gz
-    md5: 0c444ea42bb442cb3e8c94afd8831512
+    url: https://pypi.io/packages/source/P/PyScaffold/PyScaffold-{{ version }}.tar.gz
+    md5: f2edee22a614d3d31b3fb1710ebc45f8
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
