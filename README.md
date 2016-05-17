@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyscaffold-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyscaffold-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyscaffold-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyscaffold-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyscaffold-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyscaffold-feedstock/branch/master)
