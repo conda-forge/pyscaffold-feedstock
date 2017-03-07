@@ -3,11 +3,11 @@ About pyscaffold
 
 Home: http://pyscaffold.readthedocs.org/
 
-Package license: BSD-3-Clause
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Template tool for putting up the scaffold of a Python project
+Summary: Template tool for putting up the scaffold of a Python project.
 
 
 
