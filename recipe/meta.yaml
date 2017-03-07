@@ -1,46 +1,47 @@
 {% set version = "2.5.6" %}
 
 package:
-    name: pyscaffold
-    version: {{ version }}
+  name: pyscaffold
+  version: {{ version }}
 
 source:
-    fn: PyScaffold-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/P/PyScaffold/PyScaffold-{{ version }}.tar.gz
-    md5: f2edee22a614d3d31b3fb1710ebc45f8
+  fn: PyScaffold-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/P/PyScaffold/PyScaffold-{{ version }}.tar.gz
+  sha256: 6458f85b5c7370672dd245efe5a3c57a591a07f482c3af4276d66eeccc920535
 
 build:
-    script: python setup.py install --single-version-externally-managed --record record.txt
-    number: 0
-    preserve_egg_dir: True
-    entry_points:
-        - putup=pyscaffold.cli:run
+  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  preserve_egg_dir: True
+  entry_points:
+    - putup=pyscaffold.cli:run
 
 
 requirements:
-    build:
-        - python
-        - setuptools
-        - setuptools_scm >=1.7
-        - six
-        - pbr >=1.6
-    run:
-        - python
-        - six
-        - pbr >=1.6
+  build:
+    - python
+    - setuptools
+    - setuptools_scm >=1.7
+    - six
+    - pbr >=1.6
+  run:
+    - python
+    - six
+    - pbr >=1.6
 
 test:
-    imports:
-        - pyscaffold
-        - pyscaffold.templates
-    commands:
-        - putup --help
+  imports:
+    - pyscaffold
+    - pyscaffold.templates
+  commands:
+    - putup --help
 
 about:
-    home: http://pyscaffold.readthedocs.org/
-    license: BSD-3-Clause
-    summary: Template tool for putting up the scaffold of a Python project
+  home: http://pyscaffold.readthedocs.org/
+  license: BSD 3-Clause
+  license_file: LICENSE.txt
+  summary: 'Template tool for putting up the scaffold of a Python project.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
