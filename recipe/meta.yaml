@@ -11,7 +11,7 @@ source:
 
 build:
   script: python setup.py install --single-version-externally-managed --record record.txt
-  number: 0
+  number: 1
   preserve_egg_dir: True
   entry_points:
     - putup=pyscaffold.cli:run
@@ -26,6 +26,7 @@ requirements:
     - pbr >=1.6
   run:
     - python
+    - setuptools_scm >=1.7
     - six
     - pbr >=1.6
 
