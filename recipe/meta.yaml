@@ -5,23 +5,22 @@ package:
   version: {{ version }}
 
 source:
-  fn: PyScaffold-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
   sha256: 8cc9dcbe2e4be48a0c25d5484ad0eea62ee0d490f82c44a5f7ca83bb8a2ca62f
 
 build:
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps .
   number: 1
   noarch: python
   preserve_egg_dir: True
   entry_points:
-    - putup=pyscaffold.cli:run
+    - putup = pyscaffold.cli:run
 
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - setuptools_scm >=1.7
     - six
     - pbr >=1.6
