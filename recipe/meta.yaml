@@ -1,4 +1,4 @@
-{% set version = "2.4.2" %}
+{% set version = "2.5.7" %}
 
 package:
   name: pyscaffold
@@ -6,12 +6,12 @@ package:
 
 source:
   fn: PyScaffold-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/p/pyscaffold/pyscaffold-{{ version }}.tar.gz
-  sha256: 746f9aa37ac31b372bb3b960c8516f4f0d3bad6c8c2d32b48d0572f507f07122
+  url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
+  sha256: 8cc9dcbe2e4be48a0c25d5484ad0eea62ee0d490f82c44a5f7ca83bb8a2ca62f
 
 build:
   script: python setup.py install --single-version-externally-managed --record record.txt
-  number: 1
+  number: 0
   preserve_egg_dir: True
   entry_points:
     - putup=pyscaffold.cli:run
