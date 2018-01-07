@@ -19,8 +19,10 @@ build:
 requirements:
   build:
     - python
+    - setuptools
   run:
     - python
+    - setuptools
 
 test:
   imports:
