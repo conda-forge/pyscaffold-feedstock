@@ -1,11 +1,11 @@
 version: 2
 
 jobs:
-  build__CONDA_PY_34:
+  build__CONDA_PY_27:
     working_directory: ~/test
     machine: true
     environment:
-      - CONDA_PY: "34"
+      - CONDA_PY: "27"
     steps:
       - checkout
       - run:
@@ -69,6 +69,6 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - build__CONDA_PY_34
+      - build__CONDA_PY_27
       - build__CONDA_PY_35
       - build__CONDA_PY_36
