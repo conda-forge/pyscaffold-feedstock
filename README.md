@@ -1,9 +1,9 @@
-About pyscaffold
+About PyScaffold
 ================
 
-Home: http://pyscaffold.readthedocs.org/
+Home: http://pyscaffold.org/
 
-Package license: BSD 3-Clause
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
