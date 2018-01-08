@@ -1,4 +1,4 @@
-{% set version = "2.5.8" %}
+{% set version = "3.0" %}
 
 package:
   name: pyscaffold
@@ -6,11 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
-  sha256: 6b6f1492cbf4787590b7bdfd6cdcb080f53064888ed0942086ac9efed5677421
+  sha256: c8e5dc76504b0e95895afe1c9e5b1116f853940b315a809de92dc07f57869694
 
 build:
   script: python setup.py install --single-version-externally-managed --record record.txt
   number: 0
+  skip: True  # [py2k]
   preserve_egg_dir: True
   entry_points:
     - putup=pyscaffold.cli:run
@@ -20,14 +21,9 @@ requirements:
   build:
     - python
     - setuptools
-    - setuptools_scm >=1.7
-    - six
-    - pbr >=1.6
   run:
     - python
-    - setuptools_scm >=1.7
-    - six
-    - pbr >=1.6
+    - setuptools
 
 test:
   imports:
@@ -37,8 +33,8 @@ test:
     - putup --help
 
 about:
-  home: http://pyscaffold.readthedocs.org/
-  license: BSD 3-Clause
+  home: http://pyscaffold.org/
+  license: MIT
   license_file: LICENSE.txt
   summary: 'Template tool for putting up the scaffold of a Python project.'
 
