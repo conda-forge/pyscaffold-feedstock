@@ -1,4 +1,4 @@
-{% set version = "3.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: pyscaffold
@@ -6,23 +6,23 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
-  sha256: c8e5dc76504b0e95895afe1c9e5b1116f853940b315a809de92dc07f57869694
+  sha256: 2419a140a2e5f975816f558d79e0dfb83eb4df4ac06b4705fd6adcdda152ae5c
 
 build:
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
   number: 0
   skip: True  # [py2k]
-  preserve_egg_dir: True
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
-    - putup=pyscaffold.cli:run
+    - putup = pyscaffold.cli:run
 
 
 requirements:
   build:
-    - python
-    - setuptools
+    - python >=3
+    - pip
   run:
-    - python
+    - python >=3
     - setuptools
 
 test:

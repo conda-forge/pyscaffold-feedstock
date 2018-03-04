@@ -14,9 +14,7 @@ Summary: Template tool for putting up the scaffold of a Python project.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyscaffold-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyscaffold-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyscaffold-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyscaffold-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyscaffold-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyscaffold-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pyscaffold-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pyscaffold-feedstock)
 
 Current release info
 ====================
