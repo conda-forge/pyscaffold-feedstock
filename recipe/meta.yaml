@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: pyscaffold
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
-  sha256: 2419a140a2e5f975816f558d79e0dfb83eb4df4ac06b4705fd6adcdda152ae5c
+  sha256: 639a9266a1c6c399d87d7a0a6ccf8bd0132c562086d2a343a1d871b25d2a3203
 
 build:
   noarch: python
