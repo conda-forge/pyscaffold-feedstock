@@ -9,10 +9,9 @@ source:
   sha256: 2286368ce628142f9ba090a3fc401065a1b1fcb8fff7ee21b7f6fa83a3c01bcb
 
 build:
-  noarch: python
   number: 0
-  skip: True  # [py2k]
-  script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - putup = pyscaffold.cli:run
 
