@@ -7,14 +7,15 @@ Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Template tool for putting up the scaffold of a Python project.
+Summary: Template tool for putting up the scaffold of a Python project
 
 
 
 Current build status
 ====================
 
-All platforms: ![noarch disabled](https://img.shields.io/badge/noarch-disabled-lightgrey.svg)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyscaffold-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyscaffold-feedstock)
 
 Current release info
 ====================
