@@ -35,7 +35,7 @@ about:
   home: http://pyscaffold.org/
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Template tool for putting up the scaffold of a Python project.'
+  summary: 'Template tool for putting up the scaffold of a Python project'
 
 extra:
   recipe-maintainers:
