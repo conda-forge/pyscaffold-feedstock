@@ -1,4 +1,4 @@
-{% set version = "3.2.3" %}
+{% set version = "3.3" %}
 
 package:
   name: pyscaffold
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
-  sha256: 96c3e7f5529df0b5b351e879a141e1e5c9f26211f30d493c23d8c09d9d610a6f
+  sha256: 28c77ec70e727944a42ba2494bdd5c912ec38511ac76281dd28fcb9805799025
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - putup = pyscaffold.cli:run
 
@@ -35,7 +35,7 @@ about:
   home: http://pyscaffold.org/
   license: MIT
   license_file: LICENSE.txt
-  summary: 'Template tool for putting up the scaffold of a Python project'
+  summary: Template tool for putting up the scaffold of a Python project
 
 extra:
   recipe-maintainers:
