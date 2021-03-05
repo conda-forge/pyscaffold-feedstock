@@ -22,8 +22,13 @@ requirements:
     - pip
   run:
     - python >=3
-    - setuptools
-    - configupdater
+    - importlib-metadata  # [py<38]
+    - appdirs >=1.4.4,<2
+    - configupdater >=2.0,<3
+    - setuptools >=46.1.0
+    - setuptools_scm >=5
+    - tomlkit >=0.7.0,<2
+    - packaging >=20.7
 
 test:
   imports:
