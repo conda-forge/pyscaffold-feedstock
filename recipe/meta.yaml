@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=3
-    - importlib-metadata  # [py<38]
+    - importlib-metadata
     - appdirs >=1.4.4,<2
     - configupdater >=2.0,<3
     - setuptools >=46.1.0
