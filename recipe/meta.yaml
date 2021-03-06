@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
-  sha256: 4d99218ca3cbae065466ec8627f2122d4c0e95b245ba6827369121a44b40e296
+  sha256: f3fe537ce5fec36f882fb09e3bd8d849130cb2ad7516ee87c79f58a6abf0ba8e
 
 build:
   number: 0
