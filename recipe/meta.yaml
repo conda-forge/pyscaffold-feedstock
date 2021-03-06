@@ -1,4 +1,4 @@
-{% set version = "4.0" %}
+{% set version = "4.0.1rc1" %}
 
 package:
   name: pyscaffold
@@ -9,7 +9,7 @@ source:
   sha256: 7012ae5f9c95b910a39a099824104dc888beb932de86b07514882f3511bc6c74
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
