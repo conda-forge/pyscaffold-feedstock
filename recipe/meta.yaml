@@ -9,7 +9,7 @@ source:
   sha256: 7012ae5f9c95b910a39a099824104dc888beb932de86b07514882f3511bc6c74
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -20,6 +20,7 @@ requirements:
   host:
     - python >=3
     - pip
+    - setuptools_scm >=5
   run:
     - python >=3
     - importlib-metadata
@@ -35,7 +36,19 @@ test:
     - pyscaffold
     - pyscaffold.templates
   commands:
+    - pip check
     - putup --help
+    - pytest
+  requires:
+    - pip
+    - pytest
+    - pytest-cov
+    - git
+    - tox
+    - twine
+    - pre-commit
+  source_files:
+    - tests
 
 about:
   home: http://pyscaffold.org/
