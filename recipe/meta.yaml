@@ -1,4 +1,4 @@
-{% set version = "4.0" %}
+{% set version = "4.0.1rc1" %}
 
 package:
   name: pyscaffold
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pyscaffold/PyScaffold-{{ version }}.tar.gz
-  sha256: 7012ae5f9c95b910a39a099824104dc888beb932de86b07514882f3511bc6c74
+  sha256: f3fe537ce5fec36f882fb09e3bd8d849130cb2ad7516ee87c79f58a6abf0ba8e
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
   host:
     - python >=3
     - pip
+    - setuptools_scm >=5
   run:
     - python >=3
     - importlib-metadata
@@ -36,6 +37,31 @@ test:
     - pyscaffold.templates
   commands:
     - putup --help
+    - pytest -m "not slow and not system" --cov-config setup.cfg
+    - pip install path.py  # Workaround for https://github.com/man-group/pytest-plugins/pull/174
+    - pip check
+  source_files:
+    - tests
+    - setup.cfg
+  requires:
+    - git
+    - pip
+    - setuptools
+    - tomlkit
+    - certifi
+    - tox
+    - python-build
+    - pre-commit
+    - sphinx
+    - flake8
+    - virtualenv
+    - pytest
+    - pytest-cov
+    - pytest-shutil
+    - pytest-virtualenv
+    - pytest-fixture-config
+    - pytest-xdist
+    - twine
 
 about:
   home: http://pyscaffold.org/
