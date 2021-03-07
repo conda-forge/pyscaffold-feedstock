@@ -36,19 +36,32 @@ test:
     - pyscaffold
     - pyscaffold.templates
   commands:
-    - pip check
     - putup --help
-    - pytest
-  requires:
-    - pip
-    - pytest
-    - pytest-cov
-    - git
-    - tox
-    - twine
-    - pre-commit
+    - pytest -m "not slow and not system" --cov-config setup.cfg
+    - pip install path.py  # Workaround for https://github.com/man-group/pytest-plugins/pull/174
+    - pip check
   source_files:
     - tests
+    - setup.cfg
+  requires:
+    - git
+    - pip
+    - setuptools
+    - tomlkit
+    - certifi
+    - tox
+    - python-build
+    - pre-commit
+    - sphinx
+    - flake8
+    - virtualenv
+    - pytest
+    - pytest-cov
+    - pytest-shutil
+    - pytest-virtualenv
+    - pytest-fixture-config
+    - pytest-xdist
+    - twine
 
 about:
   home: http://pyscaffold.org/
