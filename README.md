@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyscaffold-feed
 
 Summary: Template tool for putting up the scaffold of a Python project
 
+Development: https://github.com/pyscaffold/pyscaffold/
+
 Current build status
 ====================
 
@@ -114,6 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@FlorianWilhelm](https://github.com/FlorianWilhelm/)
 * [@maresb](https://github.com/maresb/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
