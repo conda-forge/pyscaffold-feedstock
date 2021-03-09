@@ -38,7 +38,7 @@ test:
     - pyscaffold.templates
   commands:
     - putup --help
-    - pytest -m "not slow and not system" --cov-config setup.cfg
+    - pytest -m "not skip_on_conda_build" --cov-config setup.cfg
     - pip install path.py  # Workaround for https://github.com/man-group/pytest-plugins/pull/174
     - pip check
   source_files:
