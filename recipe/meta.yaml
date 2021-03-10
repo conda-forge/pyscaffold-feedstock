@@ -21,7 +21,7 @@ requirements:
   host:
     - python >=3
     - pip
-    - setuptools_scm >=5
+    - setuptools-scm >=5
   run:
     - python >=3
     - importlib-metadata
