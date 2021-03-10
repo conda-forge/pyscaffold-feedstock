@@ -117,6 +117,7 @@ Feedstock Maintainers
 =====================
 
 * [@FlorianWilhelm](https://github.com/FlorianWilhelm/)
+* [@abravalheri](https://github.com/abravalheri/)
 * [@maresb](https://github.com/maresb/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
