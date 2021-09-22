@@ -1,5 +1,5 @@
 {% set name = "pyscaffold" %}
-{% set version = "4.0.2" %}
+{% set version = "4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyScaffold-{{ version }}.tar.gz
-  sha256: cfa719c2d97392ec3cd5f44d95ec0d40df2dd483d5ee05ea029896cfd7c04af8
+  sha256: ff83ea4e585b29a746857c49a4dcba80795af130f62ff3f722d9f39aa4ff2a75
 
 build:
   number: 0
