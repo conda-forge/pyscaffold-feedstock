@@ -38,7 +38,7 @@ test:
     - pyscaffold.templates
   commands:
     - putup --help
-    - pytest -m "not slow and not system" --cov-config setup.cfg -k "not test_issue506"
+    - pytest -m "not slow and not system" --cov-config setup.cfg -k "not test_issue506 and not test_iterate_entry_points"
     # - pip check # pytest-shutil has a path.py bug and we cannot run this here.
   source_files:
     - tests
