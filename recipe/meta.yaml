@@ -64,7 +64,7 @@ test:
     - twine
 
 about:
-  home: http://pyscaffold.org/
+  home: https://pyscaffold.org/
   license: MIT
   license_file: LICENSE.txt
   summary: Template tool for putting up the scaffold of a Python project

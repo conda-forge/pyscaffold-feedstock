@@ -1,7 +1,7 @@
 About pyscaffold
 ================
 
-Home: http://pyscaffold.org/
+Home: https://pyscaffold.org/
 
 Package license: MIT
 
