@@ -28,6 +28,7 @@ requirements:
     - configupdater >=3.0,<4
     - importlib-metadata
     - packaging >=20.7
+    - platformdirs >=2,<3
     - setuptools >=46.1.0
     - setuptools-scm >=5
     - tomlkit >=0.7.0,<2
