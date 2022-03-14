@@ -24,7 +24,6 @@ requirements:
     - setuptools-scm >=5
   run:
     - python >=3.6
-    - appdirs >=1.4.4,<2
     - configupdater >=3.0,<4
     - importlib-metadata
     - packaging >=20.7
