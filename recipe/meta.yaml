@@ -1,5 +1,5 @@
 {% set name = "pyscaffold" %}
-{% set version = "4.1.5" %}
+{% set version = "4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyScaffold-{{ version }}.tar.gz
-  sha256: 55f6532fd6d62b3b698d604257f7a7eda6a87557bbec22760f8c0d9549454802
+  sha256: f07cd8421f8351f3bdc76aedd66ae17ecde9e705267de1a54fbce34f20e7da6e
 
 build:
   number: 0
@@ -24,7 +24,6 @@ requirements:
     - setuptools-scm >=5
   run:
     - python >=3.6
-    - appdirs >=1.4.4,<2
     - configupdater >=3.0,<4
     - importlib-metadata
     - packaging >=20.7
