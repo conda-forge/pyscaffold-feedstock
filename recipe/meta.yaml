@@ -24,13 +24,14 @@ requirements:
     - setuptools-scm >=5
   run:
     - python >=3.6
-    - configupdater >=3.0,<4
-    - importlib-metadata
-    - packaging >=20.7
-    - platformdirs >=2,<3
+    - platformdirs <3,>=2
+    - configupdater <4,>=3.0
     - setuptools >=46.1.0
     - setuptools-scm >=5
-    - tomlkit >=0.7.0,<2
+    - tomlkit <2,>=0.7.0
+    - packaging >=20.7
+    - importlib-metadata
+    - colorama >=0.4.4
 
 test:
   imports:
