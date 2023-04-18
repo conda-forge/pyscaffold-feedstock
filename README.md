@@ -1,11 +1,11 @@
-About pyscaffold
-================
+About pyscaffold-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyscaffold-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pyscaffold.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyscaffold-feedstock/blob/main/LICENSE.txt)
 
 Summary: Template tool for putting up the scaffold of a Python project
 
