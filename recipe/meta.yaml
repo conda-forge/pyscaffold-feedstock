@@ -60,9 +60,8 @@ test:
     - virtualenv
     - pytest
     - pytest-cov
-    - pytest-shutil
-    - pytest-virtualenv
     - pytest-fixture-config
+    - pytest-randomly
     - pytest-xdist
     - twine
 
