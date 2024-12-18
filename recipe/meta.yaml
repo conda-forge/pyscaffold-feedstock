@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 4085b8de9200b9f319df6f8ea7997288f159a8e4b284b062d9b2a4d6a9c1234c
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
     - wheel
     - setuptools-scm >=5
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - platformdirs >=2
     - configupdater >=3.0,<4
     - setuptools >=46.1.0
@@ -64,6 +64,7 @@ test:
     - pytest-randomly
     - pytest-xdist
     - twine
+    - python {{ python_min }}
 
 about:
   home: https://pyscaffold.org/
